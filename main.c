@@ -15,16 +15,19 @@ int main()
 	{	
 		int resultat = nb_1 + nb_2;
 		printf("addition\n");
+		printf("%d %c %d = %d\n", nb_1, oper, nb_2, resultat);
 	}
 	else if (oper=='-')
 	{
 		int resultat = nb_1 - nb_2;
 		printf("soustraction\n");
+		printf("%d %c %d = %d\n", nb_1, oper, nb_2, resultat);
  	}
 	else if (oper=='*')
 	{
 		int resultat =  nb_1 * nb_2;
 		printf("multiplication\n");
+		printf("%d %c %d = %d\n", nb_1, oper, nb_2, resultat);
 	}
 	else if (oper=='/')
 	{
@@ -32,6 +35,7 @@ int main()
 		{
 			double  resultat =  nb_1 / nb_2;
 			printf("division\n");
+			printf("%d %c %d = %.2f\n", nb_1, oper, nb_2, resultat);
 		}
 		else
 		{
@@ -44,6 +48,7 @@ int main()
 		{
 			int resultat= nb_1 %nb_2;
 			printf("modulo\n");
+			printf("%d %c %d = %d\n", nb_1, oper, nb_2, resultat);
 		}
 		else
 		{
