@@ -12,24 +12,43 @@ int main()
 	printf("Veuillez choisir un deuxième nombre\n");
 	scanf("%d",&nb_2);
 	if (oper=='+')
-	{
+	{	
+		int resultat = nb_1 + nb_2;
 		printf("addition\n");
 	}
 	else if (oper=='-')
 	{
+		int resultat = nb_1 - nb_2;
 		printf("soustraction\n");
-	}
+ 	}
 	else if (oper=='*')
 	{
+		int resultat =  nb_1 * nb_2;
 		printf("multiplication\n");
 	}
 	else if (oper=='/')
 	{
-		printf("division\n");
+		if (nb_2!=0 )
+		{
+			double  resultat =  nb_1 / nb_2;
+			printf("division\n");
+		}
+		else
+		{
+			printf("Il est impossible de diviser par 0\n");
+		}
 	}
 	else if (oper=='%')
 	{
-		printf("modulo\n");
+		if (nb_2!=0)
+		{
+			int resultat= nb_1 %nb_2;
+			printf("modulo\n");
+		}
+		else
+		{
+			printf("Il est impossible de diviser par 0\n");
+		}
 	}
 	else 
 	{
